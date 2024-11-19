@@ -66,7 +66,7 @@ watchEffect(() => {
 
 <template>
   <v-container class="fill-height">
-    <v-card class="mx-auto" rounded="lg" min-width="250">
+    <v-card class="mx-auto" rounded="lg" min-width="450">
       <v-card-title>{{ t('login.title') }}</v-card-title>
       <v-card-subtitle>{{ t('login.subtitle') }}</v-card-subtitle>
       <v-card-text>
@@ -96,7 +96,7 @@ watchEffect(() => {
         </v-form>
       </v-card-text>
       <v-card-actions>
-        <v-btn variant="elevated" block color="accent" @click="login">
+        <v-btn variant="outlined" block color="accent" @click="login">
           {{ t('login.submit') }}
         </v-btn>
       </v-card-actions>
